@@ -1,83 +1,46 @@
-# Hapttic Frontend Challenge: Analytics Dashboard
+# Getting Started with Create React App
 
-## The Mission
-At **Hapttic**, we build high-performance, data-driven applications. We don't just install libraries; we engineer solutions.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Your task is to build a **Campaign Analytics Dashboard** from scratch. We are looking for architectural maturity, strict typing, and the ability to process raw data on the client side.
+## Available Scripts
 
----
+In the project directory, you can run:
 
-## Submission Protocol (Strictly Enforced)
-We evaluate your Git workflow as much as your code.
+### `npm start`
 
-1.  **FORK this repository** to your personal GitHub account.
-2.  **Create a Feature Branch** (e.g., `feat/campaign-dashboard`).
-3.  **Develop the application.**
-    * *Requirement:* Use **Conventional Commits** (e.g., `feat: implement data aggregator`, `fix: timezone calculation`).
-    * *Requirement:* **Do not squash** your history. We want to see your progress.
-4.  **Open a Pull Request (PR)** to the `main` branch of this repository.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**⚠️ Direct code uploads or private links will be rejected.**
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
----
+### `npm test`
 
-## The Product Requirements
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-You need to build a dashboard that allows a Marketing Manager to analyze campaign performance over time.
+### `npm run build`
 
-### 1. Data Layer (The Core Challenge)
-* We have provided a `data.json` file containing two datasets:
-    1.  `campaigns`: Metadata (ID, Name, Platform).
-    2.  `metrics`: A **time-series** array of hourly data points.
-* **Requirement:** You must fetch this data and **join/merge** it on the client side.
-* **Requirement:** The raw data is **Hourly**. You must write the logic to aggregate this data dynamically based on the user's selection (Daily, Weekly, Monthly).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### 2. The Dashboard Features
-The app must include:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-* **Aggregation Controls:**
-    * A toggle or dropdown to switch the view between: **Hourly**, **Daily**, **Weekly**, **Monthly**.
-    * *Note:* This should update all charts and tables without reloading the page.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* **Timeline Chart (No Chart Libraries):**
-    * Display the performance (Clicks or Revenue) over time based on the selected aggregation.
-    * *Challenge:* Build a simple **SVG Line Chart or Bar Chart** from scratch.
-    * *Why?* We want to see if you can calculate scaling (X/Y axis logic) and map data to SVG elements.
+### `npm run eject`
 
-* **Data Grid (Table):**
-    * Rows should represent the aggregated time slots (e.g., if "Daily" is selected, each row is a Day).
-    * Columns: Date, Campaigns Active, Total Impressions, Total Clicks, Total Revenue.
-    * **Sortable:** Users must be able to sort by Date or Revenue.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### 3. Design & UX
-* **UI Frameworks are BANNED.** (No Material UI, AntDesign, Chakra, etc.).
-    * You must write your own layout CSS (Grid/Flexbox).
-    * Utility classes like Tailwind CSS **are allowed**.
-* The design should be modern, clean, and **responsive**.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## 🛠 Technical Stack
-* **React** (Functional Components + Hooks)
-* **TypeScript** (Strict Mode)
-* **Performance:** Processing large arrays can be expensive. Use `useMemo` or Web Workers if necessary to keep the UI snappy.
-* **Styling:** CSS Modules, SCSS, or Tailwind.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
----
+## Learn More
 
-## Evaluation Criteria
-We will be reviewing:
-1.  **Algorithmic Skill:** How cleanly do you aggregate hourly data into weekly buckets? (Watch out for timezone bugs!).
-2.  **Performance:** Does changing the aggregation level freeze the browser?
-3.  **Code Structure:** Is the data processing logic separated from the UI components?
-4.  **Visual Polish:** Does the custom SVG chart look professional?
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Getting Started
-1.  Fork the repo.
-2.  Initialize your React app (Vite is recommended).
-3.  Use the `data.json` provided below.
-4.  Start coding.
-
-For questions please reach me out on Telegram: `@lukalortk`
-
-Good luck!
+To learn React, check out the [React documentation](https://reactjs.org/).
