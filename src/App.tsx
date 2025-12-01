@@ -17,7 +17,7 @@ function App() {
 
   if (loading) return <div style={{ padding: 24 }}>loading...</div>;
 
-  return <DashboardContainer />;
+  return <DashboardContainer rawData={metrics} />;
 }
 
 export default App;
