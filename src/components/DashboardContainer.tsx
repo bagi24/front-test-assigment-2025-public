@@ -1,5 +1,7 @@
-import style from "../styles/DashboardContainer.module.css";
+import React from "react";
 
-export default function DashboardContainer() {
-  return <div className={style.container}>DashboardContainer</div>;
-}
+const DashboardContainer = () => {
+  return <div>dd</div>;
+};
+
+export default DashboardContainer;

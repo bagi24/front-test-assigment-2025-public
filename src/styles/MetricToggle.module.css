@@ -1,3 +1,26 @@
 .container {
-  background-color: rgb(150, 43, 4);
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 6px 14px;
+  border: 1px solid #4b6b8e;
+  border-radius: 4px;
+  background-color: white;
+  color: #4a5868;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #0f392d;
+  color: white;
+}
+
+.active {
+  background-color: #0f392d;
+  color: white;
 }
